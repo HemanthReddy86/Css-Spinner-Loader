@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css page Spinner Loader</title>
+    <style rel="stylesheet">
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #D1B06B;
+        }
+        #loader::before {
+            content: "";
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            background-color: transparent;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 20px solid #fff;
+            border-top-color:#4E555F;
+            animation: spinner 1s linear infinite;
+        }
+        @keyframes spinner {
+          to {
+            transform: rotate(360deg);
+          }   
+        }
+    </style>
+</head>
+<body>
+    <div id="loader"></div>
+</body>
+</html>
